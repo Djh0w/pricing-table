@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+body {
+    background-color: var(--page-background);
+  }
+
+  header {
+    background-color: var(--blue);
+    width: 100%;
+    height: 450px;
+}
+
+header .phrases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .phrases h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FFFFFF;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+header .phrases p {  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+
+main .card-1, .card-2, .card-3 {
+    width: 355px;
+    height: 470px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+    position: relative;
+    top: -105px;
+    margin-right: 20px; 
+    transition: 1.5s;
+}
+
+main .card-1 {
+    margin-left: 20px;
+}
+
+main .card-1:hover, .card-2:hover, .card-3:hover {
+    top: -165px;
+}
+
+/* PLANOS */
+
+main .card-1 .plan {
+    width: 51px;
+    height: 25px;
+    margin: 30px 274px 20px 30px;
+}
+
+main .card-2 .plan {
+    width: 355px;
+    height: 76px;
+    background: #FFCC29;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .card-3 .plan {
+    width: 51px;
+    height: 25px;
+    margin: 30px 274px 20px 30px;
+}
+
+/* TITULOS PLANOS */
+
+main .card-1 h4 {    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E2338;
+
+}
+
+main .card-2 h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--blue);
+    padding: 25px 148px 24px 30px;
+}
+
+main .card-2 h5 {
+    width: 46px;
+    height: 16px;
+    text-align: center;
+    background: #1D539E;
+    border-radius: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 24px;
+    margin-right: 20px;
+}
+
+main .card-3 h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E2338;
+}
+
+/* FORMATO PREÇOS */
+main .card-1 .price {
+    width: 178px;
+    height: 49px;
+    margin: 0px 178px 10px 29px;
+}
+
+main .card-2 .price {
+    width: 178px;
+    height: 49px;
+    margin: 0px 149px 10px 30px;
+}
+
+main .card-3 .price {
+    width: 178px;
+    height: 49px;
+    margin: 0px 158px 10px 29px;
+}
+
+/* FORMATANDO OS PLANOS */
+
+main .price h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+main .price .cents {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+main .price .month  {    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--gray);
+}
+
+main .des-plan {
+    width: 291px;
+    height: 38px;
+    margin: 10px 33px 41px 31px;
+}
+
+main .des-plan p {    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--gray);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 20px;
+}
+
+main .card-1 .benefits {
+    width: 294px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+main .card-2 .benefits {
+    width: 294px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 78px;
+}
+
+main .card-3 .benefits {
+    width: 294px;
+    height: 136px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+
+main .benefits li {
+    list-style-type: none;    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+main .benefits img {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+main .assign {
+    width: 296px;
+    height: 49px;
+    margin: 0 29px 0 29px;
+}
+
+main .assign button {
+    width: 296px;
+    height: 49px;
+    border: 1px solid #1D539E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--page-background);
+    color: var(--blue);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .assign button:hover {
+    background-color: var(--blue);
+    color: var(--page-background);
+}
+
+
+
+
+
